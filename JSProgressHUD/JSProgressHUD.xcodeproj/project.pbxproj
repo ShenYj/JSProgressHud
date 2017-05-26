@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E530335C4852DFDAE1F7A06 /* libPods-JSProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13ED926D28DF82A228C974E7 /* libPods-JSProgressHUD.a */; };
+		F70E9A401ED819EB001DA4E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E9A3F1ED819EB001DA4E6 /* main.m */; };
+		F70E9A431ED819EB001DA4E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E9A421ED819EB001DA4E6 /* AppDelegate.m */; };
+		F70E9A461ED819EB001DA4E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E9A451ED819EB001DA4E6 /* ViewController.m */; };
+		F70E9A491ED819EB001DA4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70E9A471ED819EB001DA4E6 /* Main.storyboard */; };
+		F70E9A4B1ED819EB001DA4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70E9A4A1ED819EB001DA4E6 /* Assets.xcassets */; };
+		F70E9A4E1ED819EB001DA4E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70E9A4C1ED819EB001DA4E6 /* LaunchScreen.storyboard */; };
+		F70E9A581ED81AA9001DA4E6 /* JSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E9A571ED81AA9001DA4E6 /* JSProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13ED926D28DF82A228C974E7 /* libPods-JSProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F07DBC7D5AE7B5E44C8E41 /* Pods-JSProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSProgressHUD/Pods-JSProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		ECA6343A72211B61D05A4F95 /* Pods-JSProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSProgressHUD/Pods-JSProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
+		F70E9A3B1ED819EB001DA4E6 /* JSProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70E9A3F1ED819EB001DA4E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F70E9A411ED819EB001DA4E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F70E9A421ED819EB001DA4E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F70E9A441ED819EB001DA4E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F70E9A451ED819EB001DA4E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F70E9A481ED819EB001DA4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F70E9A4A1ED819EB001DA4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F70E9A4D1ED819EB001DA4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F70E9A4F1ED819EB001DA4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70E9A561ED81AA9001DA4E6 /* JSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProgressHUD.h; sourceTree = "<group>"; };
+		F70E9A571ED81AA9001DA4E6 /* JSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F70E9A381ED819EB001DA4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E530335C4852DFDAE1F7A06 /* libPods-JSProgressHUD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B44AA58F30F3AC3C518DD88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13ED926D28DF82A228C974E7 /* libPods-JSProgressHUD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C66518411ECD93CE9EEB99A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F07DBC7D5AE7B5E44C8E41 /* Pods-JSProgressHUD.debug.xcconfig */,
+				ECA6343A72211B61D05A4F95 /* Pods-JSProgressHUD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F70E9A321ED819EB001DA4E6 = {
+			isa = PBXGroup;
+			children = (
+				F70E9A3D1ED819EB001DA4E6 /* JSProgressHUD */,
+				F70E9A3C1ED819EB001DA4E6 /* Products */,
+				C66518411ECD93CE9EEB99A0 /* Pods */,
+				6B44AA58F30F3AC3C518DD88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F70E9A3C1ED819EB001DA4E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F70E9A3B1ED819EB001DA4E6 /* JSProgressHUD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F70E9A3D1ED819EB001DA4E6 /* JSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F70E9A551ED81A9C001DA4E6 /* JSProgressHUD */,
+				F70E9A411ED819EB001DA4E6 /* AppDelegate.h */,
+				F70E9A421ED819EB001DA4E6 /* AppDelegate.m */,
+				F70E9A441ED819EB001DA4E6 /* ViewController.h */,
+				F70E9A451ED819EB001DA4E6 /* ViewController.m */,
+				F70E9A471ED819EB001DA4E6 /* Main.storyboard */,
+				F70E9A4A1ED819EB001DA4E6 /* Assets.xcassets */,
+				F70E9A4C1ED819EB001DA4E6 /* LaunchScreen.storyboard */,
+				F70E9A4F1ED819EB001DA4E6 /* Info.plist */,
+				F70E9A3E1ED819EB001DA4E6 /* Supporting Files */,
+			);
+			path = JSProgressHUD;
+			sourceTree = "<group>";
+		};
+		F70E9A3E1ED819EB001DA4E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F70E9A3F1ED819EB001DA4E6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F70E9A551ED81A9C001DA4E6 /* JSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F70E9A561ED81AA9001DA4E6 /* JSProgressHUD.h */,
+				F70E9A571ED81AA9001DA4E6 /* JSProgressHUD.m */,
+			);
+			path = JSProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F70E9A3A1ED819EB001DA4E6 /* JSProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70E9A521ED819EB001DA4E6 /* Build configuration list for PBXNativeTarget "JSProgressHUD" */;
+			buildPhases = (
+				86DDF361FDBA012BC422B03C /* [CP] Check Pods Manifest.lock */,
+				F70E9A371ED819EB001DA4E6 /* Sources */,
+				F70E9A381ED819EB001DA4E6 /* Frameworks */,
+				F70E9A391ED819EB001DA4E6 /* Resources */,
+				B0A7A6439B63AC86330CB8EA /* [CP] Embed Pods Frameworks */,
+				F6BB15EBA9CD153180A82394 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSProgressHUD;
+			productName = JSProgressHUD;
+			productReference = F70E9A3B1ED819EB001DA4E6 /* JSProgressHUD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F70E9A331ED819EB001DA4E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Auko;
+				TargetAttributes = {
+					F70E9A3A1ED819EB001DA4E6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3P982ZUUW8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F70E9A361ED819EB001DA4E6 /* Build configuration list for PBXProject "JSProgressHUD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F70E9A321ED819EB001DA4E6;
+			productRefGroup = F70E9A3C1ED819EB001DA4E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F70E9A3A1ED819EB001DA4E6 /* JSProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F70E9A391ED819EB001DA4E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70E9A4E1ED819EB001DA4E6 /* LaunchScreen.storyboard in Resources */,
+				F70E9A4B1ED819EB001DA4E6 /* Assets.xcassets in Resources */,
+				F70E9A491ED819EB001DA4E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86DDF361FDBA012BC422B03C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A7A6439B63AC86330CB8EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSProgressHUD/Pods-JSProgressHUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BB15EBA9CD153180A82394 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSProgressHUD/Pods-JSProgressHUD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F70E9A371ED819EB001DA4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70E9A461ED819EB001DA4E6 /* ViewController.m in Sources */,
+				F70E9A581ED81AA9001DA4E6 /* JSProgressHUD.m in Sources */,
+				F70E9A431ED819EB001DA4E6 /* AppDelegate.m in Sources */,
+				F70E9A401ED819EB001DA4E6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F70E9A471ED819EB001DA4E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F70E9A481ED819EB001DA4E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F70E9A4C1ED819EB001DA4E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F70E9A4D1ED819EB001DA4E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F70E9A501ED819EB001DA4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F70E9A511ED819EB001DA4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F70E9A531ED819EB001DA4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F07DBC7D5AE7B5E44C8E41 /* Pods-JSProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = JSProgressHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Auko.JSProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F70E9A541ED819EB001DA4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA6343A72211B61D05A4F95 /* Pods-JSProgressHUD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = JSProgressHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Auko.JSProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F70E9A361ED819EB001DA4E6 /* Build configuration list for PBXProject "JSProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70E9A501ED819EB001DA4E6 /* Debug */,
+				F70E9A511ED819EB001DA4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70E9A521ED819EB001DA4E6 /* Build configuration list for PBXNativeTarget "JSProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70E9A531ED819EB001DA4E6 /* Debug */,
+				F70E9A541ED819EB001DA4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F70E9A331ED819EB001DA4E6 /* Project object */;
+}
