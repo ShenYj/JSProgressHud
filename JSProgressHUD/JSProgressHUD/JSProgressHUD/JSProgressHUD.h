@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface JSProgressHUD : NSObject
+@interface JSProgressHUD : MBProgressHUD
+
+/** 单例 */
++ (instancetype)sharedProgressHUD;
+/** 显示遮罩 */
+- (void)js_showHUDTo:(UIView *)view animated:(BOOL)animated;
 
 @end

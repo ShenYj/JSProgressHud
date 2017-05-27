@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JSProgressHUD.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,13 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [[JSProgressHUD sharedProgressHUD] js_showHUDTo:self.view animated:YES];
+    
+    [[JSProgressHUD sharedProgressHUD] hideAnimated:YES afterDelay:3];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
