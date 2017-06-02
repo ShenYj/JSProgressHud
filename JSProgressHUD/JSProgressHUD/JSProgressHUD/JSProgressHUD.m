@@ -46,12 +46,23 @@ static JSProgressHUD *_instanceType = nil;
     // 隐藏后不从当前父视图中移除
     self.removeFromSuperViewOnHide = NO;
     // 限制最小尺寸
-    self.minSize = CGSizeMake(165,90);
+    self.minSize = CGSizeMake(150,150);
     // 文字颜色
     self.contentColor = [UIColor js_randomColor];
     // 渐变
     self.animationType = MBProgressHUDAnimationFade;
-    //    self.bezelView.color = [UIColor colorWithWhite:0.0 alpha:1];
+    // 设置自定义视图
+    self.customView = self.loadIngView;
+//    CATransform3D rotationTransform = CATransform3DMakeRotation((360*180.0)/(M_PI), 0, 0, -1);
+//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+//    animation.toValue = [NSValue valueWithCATransform3D:rotationTransform];
+//    animation.duration  =  1;
+//    animation.autoreverses = NO;
+//    animation.cumulative = YES;
+//    animation.fillMode = kCAFillModeForwards;
+//    animation.repeatCount = 100;
+//    [self.loadIngView.layer addAnimation:animation forKey:nil];
+//    self.bezelView.color = [UIColor colorWithWhite:0.0 alpha:1];
 }
 
 - (void)js_showHUDTo:(UIView *)view animated:(BOOL)animated
@@ -59,11 +70,6 @@ static JSProgressHUD *_instanceType = nil;
     [view addSubview:_instanceType];
     [_instanceType showAnimated:YES];
 }
-
-//- (void)hideAnimated:(BOOL)animated afterDelay:(NSTimeInterval)delay
-//{
-//    [super hideAnimated:animated afterDelay:delay];
-//}
 
 #pragma mark
 #pragma mark - lazy
@@ -74,7 +80,6 @@ static JSProgressHUD *_instanceType = nil;
     }
     return _loadIngView;
 }
-
 
 - (void)setUpProgressHUD1
 {
@@ -156,11 +161,10 @@ static JSProgressHUD *_instanceType = nil;
     //设置任务，在hud上显示任务的进度
     [HUD showWhileExecuting:@selector(myProgressTask) onTarget:self withObject:nil animated:YES];
     
-    //    [HUD show:YES];
-    
+//    [HUD show:YES];
     
     //两种隐藏的方法
-    //    [HUD hide:YES];
+//    [HUD hide:YES];
     [HUD hide:YES afterDelay:5];
 
 }

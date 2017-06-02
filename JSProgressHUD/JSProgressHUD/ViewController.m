@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "JSProgressHUD.h"
+//#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
 
@@ -22,16 +24,19 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+
     [[JSProgressHUD sharedProgressHUD] js_showHUDTo:self.view animated:YES];
-    
     [[JSProgressHUD sharedProgressHUD] hideAnimated:YES afterDelay:3];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
 @end
+
+

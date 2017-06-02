@@ -55,14 +55,14 @@
 - (UIImageView *)loadingLogoImageView {
     if (!_loadingLogoImageView) {
         _loadingLogoImageView = [[UIImageView alloc] init];
-        _loadingLogoImageView.image = [UIImage imageNamed:@"loading"];
+        _loadingLogoImageView.image = [UIImage imageNamed:@"ic_loading_logo"];
     }
     return _loadingLogoImageView;
 }
 - (UIImageView *)loadingRotationImageView {
     if (!_loadingRotationImageView) {
         _loadingRotationImageView = [[UIImageView alloc] init];
-        _loadingRotationImageView.image = [UIImage imageNamed:@"catch_loading"];
+        _loadingRotationImageView.image = [UIImage imageNamed:@"real_short_btn2"];
     }
     return _loadingRotationImageView;
 }

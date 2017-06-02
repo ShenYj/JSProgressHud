@@ -21,6 +21,10 @@
 		F7161F531ED97AAD0065CBCC /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F7161F4C1ED97AAD0065CBCC /* NSObject+JSObjc.m */; };
 		F7161F541ED97AAD0065CBCC /* UIColor+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7161F4E1ED97AAD0065CBCC /* UIColor+JSExtension.m */; };
 		F7161F551ED97AAD0065CBCC /* UIImage+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7161F501ED97AAD0065CBCC /* UIImage+JSExtension.m */; };
+		F7161FAD1EE0FF0C0065CBCC /* ic_loading_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7161FAC1EE0FF0C0065CBCC /* ic_loading_logo.png */; };
+		F7161FAF1EE142A60065CBCC /* catch_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = F7161FAE1EE142A50065CBCC /* catch_loading.png */; };
+		F7161FB11EE142EA0065CBCC /* ic_loading_round.png in Resources */ = {isa = PBXBuildFile; fileRef = F7161FB01EE142EA0065CBCC /* ic_loading_round.png */; };
+		F7161FB31EE1436E0065CBCC /* real_short_btn2.png in Resources */ = {isa = PBXBuildFile; fileRef = F7161FB21EE1436E0065CBCC /* real_short_btn2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,11 @@
 		F7161F4F1ED97AAD0065CBCC /* UIImage+JSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSExtension.h"; sourceTree = "<group>"; };
 		F7161F501ED97AAD0065CBCC /* UIImage+JSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSExtension.m"; sourceTree = "<group>"; };
 		F7161F561ED97CF70065CBCC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F7161F871EE00C630065CBCC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F7161FAC1EE0FF0C0065CBCC /* ic_loading_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_loading_logo.png; sourceTree = "<group>"; };
+		F7161FAE1EE142A50065CBCC /* catch_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catch_loading.png; sourceTree = "<group>"; };
+		F7161FB01EE142EA0065CBCC /* ic_loading_round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_loading_round.png; sourceTree = "<group>"; };
+		F7161FB21EE1436E0065CBCC /* real_short_btn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = real_short_btn2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,7 @@
 		6B44AA58F30F3AC3C518DD88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7161F871EE00C630065CBCC /* AudioToolbox.framework */,
 				13ED926D28DF82A228C974E7 /* libPods-JSProgressHUD.a */,
 			);
 			name = Frameworks;
@@ -133,6 +143,10 @@
 			children = (
 				F70E9A561ED81AA9001DA4E6 /* JSProgressHUD.h */,
 				F70E9A571ED81AA9001DA4E6 /* JSProgressHUD.m */,
+				F7161FAC1EE0FF0C0065CBCC /* ic_loading_logo.png */,
+				F7161FB21EE1436E0065CBCC /* real_short_btn2.png */,
+				F7161FB01EE142EA0065CBCC /* ic_loading_round.png */,
+				F7161FAE1EE142A50065CBCC /* catch_loading.png */,
 				F7161F431ED979EC0065CBCC /* JSLoadIngView.h */,
 				F7161F441ED979EC0065CBCC /* JSLoadIngView.m */,
 			);
@@ -218,9 +232,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7161FAF1EE142A60065CBCC /* catch_loading.png in Resources */,
 				F70E9A4E1ED819EB001DA4E6 /* LaunchScreen.storyboard in Resources */,
 				F70E9A4B1ED819EB001DA4E6 /* Assets.xcassets in Resources */,
+				F7161FB11EE142EA0065CBCC /* ic_loading_round.png in Resources */,
 				F70E9A491ED819EB001DA4E6 /* Main.storyboard in Resources */,
+				F7161FB31EE1436E0065CBCC /* real_short_btn2.png in Resources */,
+				F7161FAD1EE0FF0C0065CBCC /* ic_loading_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
