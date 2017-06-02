@@ -8,6 +8,9 @@
 
 #import "JSLoadIngView.h"
 
+static NSString * const kLogoImageName = @"ic_loading_logo";        // LOGO 图
+static NSString * const kRotaImageName = @"real_short_btn2";        // 圆环  图
+
 @interface JSLoadIngView ()
 
 /** LOGO图片 : 不动 */
@@ -16,6 +19,8 @@
 @property (nonatomic,strong) UIImageView *loadingRotationImageView;
 /** 文本提示 */
 @property (nonatomic,strong) UILabel     *contentLabel;
+/*** 资源bundle ***/
+@property (nonatomic,strong) NSBundle    *srcBundle;
 
 @end
 
@@ -32,14 +37,15 @@
 
 - (void)setUpLoadingView
 {
-    self.backgroundColor = [UIColor whiteColor];
+    // 设置背景色
+    self.backgroundColor = [UIColor clearColor];
+    // 添加子控件
     [self addSubview:self.loadingRotationImageView];
     [self addSubview:self.loadingLogoImageView];
     [self addSubview:self.contentLabel];
-    
+    // 添加约束
     [self.loadingRotationImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.centerX.mas_equalTo(self);
-        make.size.mas_equalTo(CGSizeMake(80, 80));
     }];
     [self.loadingLogoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.centerY.mas_equalTo(self);
@@ -49,11 +55,22 @@
         make.centerX.mas_equalTo(self);
     }];
     
+    UIImage *rotationImage = [UIImage imageNamed:kLogoImageName inBundle:self.srcBundle compatibleWithTraitCollection:nil];
+    UIImage *logoImage = [UIImage imageNamed:kRotaImageName inBundle:self.srcBundle compatibleWithTraitCollection:nil];
+    
+    __weak typeof(self) weakSelf = self;
+    [logoImage js_ImageWithSize:CGSizeMake(70, 70) completion:^(UIImage *img) {
+        weakSelf.loadingRotationImageView.image = img;
+    }];
+    [rotationImage js_ImageWithSize:CGSizeMake(50, 50) completion:^(UIImage *img) {
+        weakSelf.loadingLogoImageView.image = img;
+    }];
+    
     CABasicAnimation *anima = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     anima.toValue = @(M_PI*2);
     anima.duration = 1.0f;
     anima.repeatCount = CGFLOAT_MAX;
-    [self.loadingRotationImageView.layer addAnimation:anima forKey:nil];
+    [self.loadingRotationImageView.layer addAnimation:anima forKey:@"123"];
 }
 
 #pragma mark
@@ -62,14 +79,12 @@
 - (UIImageView *)loadingLogoImageView {
     if (!_loadingLogoImageView) {
         _loadingLogoImageView = [[UIImageView alloc] init];
-        _loadingLogoImageView.image = [UIImage imageNamed:@"ic_loading_logo"];
     }
     return _loadingLogoImageView;
 }
 - (UIImageView *)loadingRotationImageView {
     if (!_loadingRotationImageView) {
         _loadingRotationImageView = [[UIImageView alloc] init];
-        _loadingRotationImageView.image = [UIImage imageNamed:@"real_short_btn2"];
     }
     return _loadingRotationImageView;
 }
@@ -81,6 +96,12 @@
     }
     return _contentLabel;
 }
-
+- (NSBundle *)srcBundle {
+    if (!_srcBundle) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"src.bundle" ofType:nil];
+        _srcBundle = [NSBundle bundleWithPath:path];
+    }
+    return _srcBundle;
+}
 
 @end
