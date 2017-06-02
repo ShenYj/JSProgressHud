@@ -17,8 +17,6 @@ static NSString * const kRotaImageName = @"real_short_btn2";        // 圆环  �
 @property (nonatomic,strong) UIImageView *loadingLogoImageView;
 /** LOGO外围圆环: 旋转 */
 @property (nonatomic,strong) UIImageView *loadingRotationImageView;
-/** 文本提示 */
-@property (nonatomic,strong) UILabel     *contentLabel;
 /*** 资源bundle ***/
 @property (nonatomic,strong) NSBundle    *srcBundle;
 
@@ -67,10 +65,12 @@ static NSString * const kRotaImageName = @"real_short_btn2";        // 圆环  �
     }];
     
     CABasicAnimation *anima = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    anima.toValue = @(M_PI*2);
+    anima.byValue = @(M_PI*2);
     anima.duration = 1.0f;
     anima.repeatCount = CGFLOAT_MAX;
-    [self.loadingRotationImageView.layer addAnimation:anima forKey:@"123"];
+    anima.fillMode = kCAFillModeForwards;
+    anima.removedOnCompletion = NO;
+    [self.loadingRotationImageView.layer addAnimation:anima forKey:nil];
 }
 
 #pragma mark

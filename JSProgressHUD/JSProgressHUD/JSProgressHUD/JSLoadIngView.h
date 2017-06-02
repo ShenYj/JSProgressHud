@@ -10,4 +10,7 @@
 
 @interface JSLoadIngView : UIView
 
+/** 文本提示 */
+@property (nonatomic,strong) UILabel     *contentLabel;
+
 @end

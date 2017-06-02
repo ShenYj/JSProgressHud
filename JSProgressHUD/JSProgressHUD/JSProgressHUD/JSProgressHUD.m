@@ -74,6 +74,13 @@ static JSProgressHUD *_instanceType = nil;
     [_instanceType showAnimated:YES];
 }
 
+- (void)setNoticeString:(NSString *)noticeString
+{
+    _noticeString = noticeString;
+    self.loadIngView.contentLabel.text = noticeString;
+    
+}
+
 #pragma mark
 #pragma mark - lazy
 
