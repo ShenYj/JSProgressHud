@@ -46,13 +46,16 @@ static JSProgressHUD *_instanceType = nil;
     // 隐藏后不从当前父视图中移除
     self.removeFromSuperViewOnHide = NO;
     // 限制最小尺寸
-    self.minSize = CGSizeMake(150,150);
+    self.minSize = CGSizeMake(160,160);
     // 文字颜色
-    self.contentColor = [UIColor js_randomColor];
+    self.contentColor = [UIColor blackColor];
     // 渐变
     self.animationType = MBProgressHUDAnimationFade;
     // 设置自定义视图
     self.customView = self.loadIngView;
+    // 透明度为0(小于等于0.01),相当于hidden,无法响应触摸事件
+    self.bezelView.color = [UIColor clearColor];
+    
 //    CATransform3D rotationTransform = CATransform3DMakeRotation((360*180.0)/(M_PI), 0, 0, -1);
 //    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
 //    animation.toValue = [NSValue valueWithCATransform3D:rotationTransform];
@@ -83,7 +86,6 @@ static JSProgressHUD *_instanceType = nil;
 
 - (void)setUpProgressHUD1
 {
-
     /*
      要将一个MBProgressHUD显示出来，1，创建对象；2，将HUD添加到view上；3，调用show方法
      隐藏，1，hide:方法；  2，hide: afterDelay: 方法
